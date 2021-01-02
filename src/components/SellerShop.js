@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function dashboard() {
+export default function Seller() {
     return (
         <div>
-            General dashboard
+            Seller Shop
         </div>
     )
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function dashboard() {
+export default function Checkout() {
     return (
         <div>
-            General dashboard
+            Checkout Page
         </div>
     )
 }

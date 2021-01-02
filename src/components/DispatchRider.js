@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function dashboard() {
+export default function Dispatch() {
     return (
         <div>
-            General dashboard
+            Dispatch Rider
         </div>
     )
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function dashboard() {
+export default function Registration() {
     return (
         <div>
-            General dashboard
+            Registration Page
         </div>
     )
 }

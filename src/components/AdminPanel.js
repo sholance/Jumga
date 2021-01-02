@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function dashboard() {
+export default function Admin() {
     return (
         <div>
-            General dashboard
+            Administrator (owner panel)
         </div>
     )
 }
