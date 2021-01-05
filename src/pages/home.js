@@ -4,6 +4,7 @@ export default function home() {
     return (
         <div>
             All products
+            here
         </div>
     )
 }
