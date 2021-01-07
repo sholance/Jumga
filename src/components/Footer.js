@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Admin() {
+export default function Footer() {
     return (
         <div>
-            Administrator (owner panel)
+            Footer
         </div>
     )
 }
