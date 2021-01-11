@@ -1,7 +1,17 @@
+/* Html style  */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+
 header {
     display: flex;
     padding: 5px 1.5%;
     background: #fff;
+    position: fixed;
+    width: 100vw;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
 }
 .brand-name {
     font-size: 30px;
@@ -22,13 +32,124 @@ header {
     right: 2%;
     top: 7px;
 }
-.nav-item {
+a {
     color: #222;
+    transition: 0.1 ease;
+}
+/* a:hover {
+    transform: scale(1.2);
+} */
+
+/* hero section styling */
+.container {
+    height: 70vh;
+    background: #ddd;
+    padding: 100px;
+    width: 100vw;
 }
 .hero {
     height: 70vh;
-    background: #063642;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        60deg,
+        #f79533,
+        #f37055,
+        #ef4e7b,
+        #a166ab,
+        #5073b8,
+        #1098ad,
+        #07b39b,
+        #6fba82
+      );}
+.hero__text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
 }
+.search-jumga {
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: auto;
+}
+
+
+
+.search__input {
+    outline: 0;
+    height: 42px;
+    width: 244px;
+    padding: 0 16px;
+    color: #212121;
+    border: 0;
+    -webkit-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+.search__input:focus {
+    outline: 0;
+    background-color: #fff;
+    transform: scale(1.03);
+    border: solid 0.8px #ccc;
+}
+
+.search__button {
+    padding: 0.6em;
+    border: none;
+    border-radius: 5px;
+    background: #050d57dc;
+    color: #fff;
+}
+
 .main {
-    padding:20px 30px;
+    padding:20px 5%;
+}
+.main__h3 {
+    font-size: 1.2rem;
+    color: #222;
+}
+
+/* Products styling  */
+.featured-products {
+    display: flex;
+    padding: 20px 3.5%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    scroll-padding: 48px;
+    padding-bottom: 23px;
+    /* -webkit-overflow-scrolling: touch; */
+}
+.product {
+    padding-right: 20px;
+    scroll-snap-align: start;
+}
+.product__wrapper {
+    height: 100%;
+    width: 200px;
+    justify-content: center;
+    align-self: center;
+}
+.product__image {
+    background: #222;
+    width: 100%;
+    height: 300px;
+}
+.product__name {
+    font-size: 0.85rem;
+    color: #222;
+}
+.product__short-desc {
+    font-size: 0.7rem;
+}
+
+/* Footer styling */
+
+footer {
+    height: 15vh;
+    background: #222;
 }
