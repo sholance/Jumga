@@ -8,7 +8,7 @@ export default function Product() {
         <h4 className="product__name">Product Name</h4>
         <span className="product__price">$100</span>
         <p className="product__short-desc">
-          Product description in less than 10 words
+          Product short description in less than 10 words
         </p>
       </div>
     </div>

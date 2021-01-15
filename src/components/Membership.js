@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Membership() {
     return (
-        <div className="membership container">
+        <div className="cont">
             membership            
         </div>
     )
