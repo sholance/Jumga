@@ -10,32 +10,32 @@ module.exports = function(app) {
     next();
   });
 
-  app.get("/api/test/all", controller.allAccess);
+  // app.get("/api/test/all", controller.allAccess);
 
-  app.get(
-    "/api/test/user",
-    [authJwt.verifyToken],
-    controller.userBoard
-  );
+  // app.get(
+  //   "/api/test/user",
+  //   [authJwt.verifyToken],
+  //   controller.userBoard
+  // );
 
-  app.get(
-    "/api/test/mod",
-    [authJwt.verifyToken, authJwt.isModerator],
-    controller.moderatorBoard
-  );
-  app.get(
-    "/api/test/seller",
-    [authJwt.verifyToken, authJwt.isSeller],
-    controller.seller
-  );
-  app.get(
-    "/api/test/buyer",
-    [authJwt.verifyToken, authJwt.isBuyer],
-    controller.buyer
-  );
-  app.get(
-    "/api/test/admin",
-    [authJwt.verifyToken, authJwt.isAdmin],
-    controller.adminBoard
-  );
+  // app.get(
+  //   "/api/test/mod",
+  //   [authJwt.verifyToken, authJwt.isModerator],
+  //   controller.moderatorBoard
+  // );
+  // app.get(
+  //   "/api/test/seller",
+  //   [authJwt.verifyToken, authJwt.isSeller],
+  //   controller.seller
+  // );
+  // app.get(
+  //   "/api/test/buyer",
+  //   [authJwt.verifyToken, authJwt.isBuyer],
+  //   controller.buyer
+  // );
+  // app.get(
+  //   "/api/test/admin",
+  //   [authJwt.verifyToken, authJwt.isAdmin],
+  //   controller.adminBoard
+  // );
 };

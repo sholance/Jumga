@@ -21,32 +21,32 @@ app.get("/", (req, res) => {
 });
 
 db.sequelize.sync({ force: true }).then(() => {
-  console.log("Drop and Resync Db");
-  initial();
+  console.log("Drop and re-sync db.");
 });
 
 function initial() {
-    Role.create({
-        id: 1,
-        name: "admin"
-    });  
-      Role.create({
-        id: 2,
-        name: "shopMod"
-    });   
-     Role.create({
-        id: 3,
-        name: "seller"
-    });
-    Role.create({
-        id: 4,
-        name: "member"
-    })
+  Role.create({
+    id: 1,
+    name: "admin",
+  });
+  Role.create({
+    id: 2,
+    name: "shopMod",
+  });
+  Role.create({
+    id: 3,
+    name: "seller",
+  });
+  Role.create({
+    id: 4,
+    name: "member",
+  });
 }
 
 // routes
-require('./app/routes/auth.routes')(app);
-require('./app/routes/user.routes')(app);
+require("./app/routes/auth.routes")(app);
+require("./app/routes/user.routes")(app);
+require("./app/routes/product.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
